@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1><a href="index.html">사진첩</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+            <li><a href="4.html">PICTURE</a></li>
+            <li><a href="ex1_jsTest.html">button</a></li>
+        </ol>
+    </div>
+<body>
+    <script>
+        document.write("<h1>오늘 점심은 뭐 먹지?</h1>")
+        document.write("<h2>오늘 메뉴는 수제버거</h2>")
+        document.write(1 + 1)
+        document.write("<br>")
+        document.write("1+1")
+    </script>
+    <!-- <script>
+        if (window.confirm("Do you really want to leave?")) {
+            alert("국밥", "0");
+        } -->
+
+
+    </script>
+    <h1>1+1</h1>
+
+    <input type="button" value="alertTest" onclick="
+    alert('alertTest 중입니다.')
+      ">
+
+    <input type="button" value="confirmTest" onclick="
+      if (window.confirm('Do you really want to leave?')) {
+            alert('국밥');
+        }
+        ">
+<br>
+<input type="text" value = "" onchange ="alert('changed')">
+<br>
+<input type="text" id = "textInput"  onkeydown="alert('그만 누르십시오')">
+<button onclick="deleteText()">clear</button>
+<script>
+
+function deleteText() {
+    // 입력 필드의 값을 삭제합니다.
+    var inputField = document.getElementById("textInput");
+    inputField.value = "";
+
+    // 입력된 텍스트가 삭제되었다는 알림을 표시합니다.
+    alert("텍스트가 삭제되었습니다.");
+}
+</script>
+</body>
+
+</html>
